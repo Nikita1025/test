@@ -1,0 +1,66 @@
+@import "src/styles/colors";
+@import "src/styles/mixins";
+.container{
+  .headerContainer{
+    display: flex;
+    align-items: center;
+    border-bottom:1px solid $color-dark-300;
+    .icons{
+      display: flex;
+      gap: 20px;
+      margin: 10px 31px 10px 20px;
+    }
+    .activeButton,
+    .button{
+      @include typography($font-size-s,$line-height-m,$font-weight-regular);
+      color:$color-dark-100;
+      padding: 12px 0;
+      border: none;
+      border-radius: 0;
+      text-transform: none;
+    }
+    .activeButton{
+      color: $color-light-100;
+      border-bottom: 2px solid $color-light-100;
+      margin-right: 28px;
+    }
+  }
+  .bottomContainer{
+    display: flex;
+    border-bottom:1px solid $color-dark-300;
+    .nameProjects{
+      display: flex;
+      padding: 8px 2px 8px 20px;
+      align-items: center;
+      width: 234px;
+      justify-content: space-between;
+      border-right: 1px solid $color-dark-300;
+      .text{
+        display: flex;
+        flex-direction: column;
+        padding-right: 62px;
+        .abbreviation,
+        .textProject{
+          @include typography($font-size-s,$line-height-m,$font-weight-regular);
+          color:$color-dark-100;
+          line-height: normal;
+        }
+        .abbreviation{
+          font-size: $font-size-xs;
+        }
+      }
+    }
+    .project{
+      padding: 11px 15px;
+      border-right: 1px solid $color-dark-300;
+
+      .name{
+        @include typography($font-size-l,$line-height-m,$font-weight-regular);
+
+      }
+    }
+
+  }
+
+}
+

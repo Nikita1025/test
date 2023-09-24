@@ -1,0 +1,27 @@
+@import "src/styles/colors";
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+
+  .containerProjectBar {
+    display: flex;
+    flex-direction: column;
+    width: 269px;
+    border-right: 1px solid $color-dark-300;
+
+    .viewProject,
+    .project {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 5px 0 5px 20px;
+    }
+
+    .viewProject {
+      background: $color-dark-100;
+
+    }
+  }
+}
